@@ -12,3 +12,6 @@
 2. TortoiseSvnUpdate.bat  
 TortoiseSVNをGUIを使わずにSVN更新する。  
 2.1. 更新対象ディレクトリ変更可  
+
+3. shotdown.vbs  
+確認ダイアログ付きの電源OFFスクリプト。  
