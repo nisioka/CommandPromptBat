@@ -1,4 +1,4 @@
-@rem 文字コード：UTF8
+@rem 文字コード：(UTF8->65001, Shift-JIS->932)
 chcp 65001
 
 @echo off
