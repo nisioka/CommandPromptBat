@@ -49,4 +49,4 @@ http://tortoisesvn.net/docs/release/TortoiseSVN_ja/tsvn-automation.html
 ## 4. switchingJava
 ### 概要
 Javaのバージョンを動的に変更します。
-使用方法の詳細はどうディレクトリのREADME.mdを参照してください。
+使用方法の詳細はswitchingJavaディレクトリの[README.md](/switchingJava/README.md)を参照してください。

@@ -12,6 +12,7 @@ Javaのバージョンを動的に変更します。
 ### 使用方法  
 こちらをテンプレートとして、切り替えたいJavaのバージョン毎にファイルをコピーして編集します。
 例えば、Javaのインストールディレクトリが以下の通りであれば、これらのディレクトリ名のそれぞれを指定します。
+
 ![java](https://user-images.githubusercontent.com/16322296/39846959-dc7975c6-5439-11e8-88b1-2cabe65b2922.png)
 
 変更前
@@ -21,6 +22,7 @@ Javaのバージョンを動的に変更します。
 > powershell start-process switchingJava.bat jdk1.8.0_131 -verb runas
 
 こうして切り替えたいJavaの複数バージョンを作成した例がこちらです。
+
 ![switchingjava](https://user-images.githubusercontent.com/16322296/39847426-8095d1a2-543c-11e8-8666-c065dd755fba.png)
 
 ## 2. switchingJava.bat
