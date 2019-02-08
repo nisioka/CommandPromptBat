@@ -45,6 +45,29 @@ set BEFORE_STR=before
 ```
 set AFTER_STR=after
 ```
+== DeleteFileAndDirectory.bat
+=== 概要
+同ディレクトリ内にある、指定したファイルとディレクトリを再帰的に削除します。
+* ファイル：ワイルドカード指定可能
+* ディレクトリ：ワイルドカード指定不可能
+
+=== 使用方法  
+ファイル内の、以下の変数を削除したいファイル/ディレクトリに合わせて変更してください。
+TARGET_FILE：削除対象ファイル名（ワイルドカードを*で指定可能）
+TARGET_DIRECTORY：削除対象ディレクトリ名
+
+== shotdown.vbs  
+=== 概要
+確認ダイアログ付きの電源OFFスクリプト。 
+
+=== 使用方法   
+ダブルクリック等で、バッチを実行します。
+確認ダイアログで"はい"を選択するとWindowsをシャットダウンします。
+
+== switchingJava
+=== 概要
+Javaのバージョンを動的に変更します。
+使用方法の詳細はswitchingJavaディレクトリのlink:/switchingJava/README.adoc[README]を参照してください。
 
 == TortoiseSvnUpdate.bat  
 === 概要
@@ -59,16 +82,3 @@ start TortoiseProc.exe /command:update /path:"対象ディレクトリ" /closeon
 
 === 参考
 http://tortoisesvn.net/docs/release/TortoiseSVN_ja/tsvn-automation.html
-
-== shotdown.vbs  
-=== 概要
-確認ダイアログ付きの電源OFFスクリプト。 
-
-=== 使用方法   
-ダブルクリック等で、バッチを実行します。
-確認ダイアログで"はい"を選択するとWindowsをシャットダウンします。
-
-== switchingJava
-=== 概要
-Javaのバージョンを動的に変更します。
-使用方法の詳細はswitchingJavaディレクトリのlink:/switchingJava/README.adoc[README]を参照してください。
