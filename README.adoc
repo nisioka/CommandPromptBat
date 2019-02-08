@@ -30,15 +30,21 @@
 chcpから始まる行のコードポイントを任意の値に変更してください。
 
 ==== 対象拡張子変更を変更する場合
-以下の行の"*.txt"部分を変更してください。ただし、"*.bat"は指定できません(このbat自体が対象となってしまうため)。
-> type *.txt > %TMP_FILE%
+以下の行の"\*.txt"部分を変更してください。ただし、"*.bat"は指定できません(このbat自体が対象となってしまうため)。
+```
+type *.txt > %TMP_FILE%
+```
 
 ==== 置換前後文字列を変更する場合
 置換対象の文字列の指定箇所
-> set BEFORE_STR=before
+```
+set BEFORE_STR=before
+```
 
 置換後の文字列の指定箇所
-> set AFTER_STR=after
+```
+set AFTER_STR=after
+```
 
 == TortoiseSvnUpdate.bat  
 === 概要
@@ -47,7 +53,9 @@ TortoiseSVNをGUIを使わずにSVN更新する。
 === 使用方法
 ==== 更新対象ディレクトリを変更する場合  
 以下の"対象ディレクトリ"を変更してください。
-> start TortoiseProc.exe /command:update /path:"対象ディレクトリ" /closeonend:3
+```
+start TortoiseProc.exe /command:update /path:"対象ディレクトリ" /closeonend:3
+```
 
 === 参考
 http://tortoisesvn.net/docs/release/TortoiseSVN_ja/tsvn-automation.html
@@ -63,4 +71,4 @@ http://tortoisesvn.net/docs/release/TortoiseSVN_ja/tsvn-automation.html
 == switchingJava
 === 概要
 Javaのバージョンを動的に変更します。
-使用方法の詳細はswitchingJavaディレクトリの[README.md](/switchingJava/README.md)を参照してください。
+使用方法の詳細はswitchingJavaディレクトリのlink:/switchingJava/README.adoc[README]を参照してください。

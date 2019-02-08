@@ -1,40 +1,62 @@
-# switchingJava
+:encoding: utf-8
+:lang: ja
+:doctype: book
+:toc: left
+:toc-title: 目次
+:toclevels: 3
+:chapter-label:
+:figure-caption: 図
+:example-caption: 例
+:table-caption: 表
+:appendix-caption: 付録
+:listing-caption: リスト
+:sectnums:
+
+= switchingJava
 Javaのバージョンを動的に変更します。
-#### 制約条件:
+
+==== 制約条件:
 * powershellが実行できる必要があります。
 * それぞれのJavaバージョンが端末にインストールされている必要があります。
 
-# それぞれのバッチ説明
-## 1. javaX.bat
-### 概要
+= それぞれのバッチ説明
+== javaX.bat
+=== 概要
 任意のJavaバージョンに変更したい場合に実行するbatのテンプレートです。
 
-### 使用方法  
+=== 使用方法  
 こちらをテンプレートとして、切り替えたいJavaのバージョン毎にファイルをコピーして編集します。
 例えば、Javaのインストールディレクトリが以下の通りであれば、これらのディレクトリ名のそれぞれを指定します。
 
-![java](https://user-images.githubusercontent.com/16322296/39846959-dc7975c6-5439-11e8-88b1-2cabe65b2922.png)
+:https://user-images.githubusercontent.com/16322296/39846959-dc7975c6-5439-11e8-88b1-2cabe65b2922.png:
 
 変更前
-> powershell start-process switchingJava.bat XXX -verb runas
+
+```
+powershell start-process switchingJava.bat XXX -verb runas
+```
 
 変更後
-> powershell start-process switchingJava.bat jdk1.8.0_131 -verb runas
+```
+powershell start-process switchingJava.bat jdk1.8.0_131 -verb runas
+```
 
 こうして切り替えたいJavaの複数バージョンを作成した例がこちらです。
 
-![switchingjava](https://user-images.githubusercontent.com/16322296/39847426-8095d1a2-543c-11e8-8666-c065dd755fba.png)
+:https://user-images.githubusercontent.com/16322296/39847426-8095d1a2-543c-11e8-8666-c065dd755fba.png:
 
-## 2. switchingJava.bat
-### 概要
+== switchingJava.bat
+=== 概要
 Javaバージョンの変更を行う実体です。
 上記javaX.batから呼び出されます。
 
-### 使用方法  
+=== 使用方法  
 Javaのインストールディレクトリ以外に編集する必要はありません。
 必要に応じて、以下をご自身の環境向けに編集してください。
 
-> set java_dir=C:\Program Files\Java\
+```
+set java_dir=C:\Program Files\Java\
+```
 
-# 参考
+= 参考
 https://qiita.com/spamoc/items/635e1f9f26afddf3ad21
